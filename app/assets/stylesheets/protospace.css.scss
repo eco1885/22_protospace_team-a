@@ -1,6 +1,6 @@
 /* -- import Roboto Font ------------------------------ */
 @import "//fonts.googleapis.com/css?family=Lato:300,400,700";
-
+@import "./colors";
 /*-- Body style ---------------------------------- */
 body {
   font-family: "Lato", 'Helvetica Neue, Helvetica, Arial', sans-serif;
@@ -169,7 +169,7 @@ body {
   -o-transform: scale(0);
   transform: scale(0);
 
-  background: #fff;
+  background: $white;
   opacity: 1;
 }
 
@@ -216,22 +216,42 @@ body {
   }
 }
 
-
-.btn-default {
-  border: 1px solid #eee;
-  &:hover {
-    border: 1px solid #eee;
-    background: #eee;
+.col-lg-11{
+  .btn-default {
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    margin:0 5px 10px 0;
+    &:hover {
+      border: 1px solid $light-gray;
+      background: $light-gray;
+      border-radius: 4px;
+    }
+    .btn-popular {
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+      color: $white;
+    }
+    .btn-newest {
+      background-color: #5bc0de;
+      border-color: #4668da;
+      color: $white;
+    }
   }
 }
 
+.col-lg-1{
+  border: 1px solid $light-gray;
+  border-radius: 2px;
+  padding:10px 14px;
+}
+
+
 .btn-primary {
   background-image: linear-gradient(-180deg, #67ABFA 0%, #4A8DDC 100%);
-  border: 1px solid #4A8EDD;
+  border: 1px solid $blue;
   border-radius: 3px;
-
   &:hover {
-    border: 1px solid #4A8EDD;
+    border: 1px solid $blue;
     opacity: 0.9;
   }
 }
@@ -254,7 +274,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: $white;
   padding: 20px 0;
 
   .navbar-brand {
@@ -262,7 +282,7 @@ body {
   }
 
   .btn a {
-    color: #fff;
+    color: $white;
 
     &:hover {
       text-decoration: none;
@@ -275,13 +295,13 @@ body {
   background-position:  center 92px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size:  100% auto;
+  background-size:  auto 60%;
   padding: 80px 0;
   margin-bottom: 0;
 }
 
 .filter-nav {
-  background-color: #fff;
+  background-color: $white;
   box-shadow: 0 2px 5px rgba(100,100,100,0.2);
   padding: 20px 0;
   margin-bottom: 20px;
@@ -317,7 +337,7 @@ body {
     font-size: 1rem;
     padding: 5px;
     min-width: 50px;
-    border: 1px solid #eee;
+    border: 1px solid $light-gray;
   }
 }
 
@@ -404,7 +424,7 @@ body {
 
     &:hover {
       color: lighten(#000,10%);
-      box-shadow: 0 1px 1px #eee;
+      box-shadow: 0 1px 1px $light-gray;
     }
   }
 
@@ -414,7 +434,7 @@ body {
   }
 
   .cover-image-upload {
-    background: image-url("noimage-big.png") #fff no-repeat center center;
+    background: image-url("noimage-big.png") $white no-repeat center center;
     height: 500px;
     position: relative;
     margin-bottom: 20px;
@@ -437,7 +457,7 @@ body {
     margin-bottom: 20px;
 
     .image-upload {
-      background: image-url("noimage.png") #fff no-repeat center center;
+      background: image-url("noimage.png") $white no-repeat center center;
       height: 200px;
       position: relative;
 
@@ -492,7 +512,7 @@ body {
 
     &:hover {
       color: lighten(#000,10%);
-      box-shadow: 0 1px 1px #eee;
+      box-shadow: 0 1px 1px $light-gray;
     }
 
     &.user-name {
@@ -513,7 +533,7 @@ body {
     width: 75px;
     height: 75px;
     position: relative;
-    background-color: #fff;
+    background-color: $white;
     background-size: cover;
 
     button {
@@ -590,7 +610,7 @@ body {
 
     &:hover {
       color: lighten(#000,10%);
-      box-shadow: 0 1px 1px #eee;
+      box-shadow: 0 1px 1px $light-gray;
     }
   }
 }
