@@ -9,3 +9,8 @@
           = link_to prototype.user.name, user_path(prototype.user)
         .proto-posted
           = prototype.posted_date
+      .proto-edit_link
+        = link_to 'edit', "/prototypes/#{prototype.id}/edit", method: :get
+
+        = link_to 'delete', "/prototypes/#{prototype.id}", method: :delete
+
