@@ -27,8 +27,8 @@ class PrototypesController < ApplicationController
   end
 
   def update
-    tweet = Tweet.find(params[:id])
-      tweet.update(tweet_params)
+    prototype = Prototype.find(params[:id])
+      prototype.update(prototype_params)
     end
 
   private
