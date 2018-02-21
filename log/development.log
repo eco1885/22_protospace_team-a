@@ -1330,3 +1330,479 @@ ActionController::RoutingError (No route matches [GET] "/uploads/captured_image/
   Rendered /Users/yusukeharada/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/yusukeharada/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
   Rendered /Users/yusukeharada/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (252.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:16:30 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (5.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (2.7ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (15.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 1 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (103.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (474.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (11.9ms)
+  Rendered shared/_messages.html.haml (2.4ms)
+  Rendered shared/_footer.html.haml (2.5ms)
+Completed 200 OK in 611ms (Views: 544.7ms | ActiveRecord: 38.5ms)
+
+
+Started DELETE "/prototypes/1" for ::1 at 2018-02-21 09:18:24 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0hkcpIcQs/BIJ0LAt4WpYlCe4Ose958iQg6bxnmoo4nKPBoFB4QVlsfWQPEBylbpMIRTvd5ev/gstj/6kyV7zw==", "id"=>"1"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `user_id' for nil:NilClass):
+  app/controllers/prototypes_controller.rb:23:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (196.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:22:50 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 1 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (28.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (40.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (3.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 89ms (Views: 71.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:22:51 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 1 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (3.2ms)
+  Rendered prototypes/index.html.haml within layouts/application (6.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/prototypes/1" for ::1 at 2018-02-21 09:22:54 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DodOO+p6S+76CAdLDIQnK1GWmJY35S4VViT/g+iPKwAWokiaau7tiHX5BXq6y9igMYwrwPdMDs84nFu/AgLzRg==", "id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/prototypes_controller.rb:24:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.3ms)
+
+
+Started DELETE "/prototypes/1" for ::1 at 2018-02-21 09:23:21 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DodOO+p6S+76CAdLDIQnK1GWmJY35S4VViT/g+iPKwAWokiaau7tiHX5BXq6y9igMYwrwPdMDs84nFu/AgLzRg==", "id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/prototypes_controller.rb:24:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:25:14 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 1 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (20.4ms)
+  Rendered prototypes/index.html.haml within layouts/application (30.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 64ms (Views: 49.5ms | ActiveRecord: 8.2ms)
+
+
+Started DELETE "/prototypes/1" for ::1 at 2018-02-21 09:25:16 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"euueINURXZQlRxg03ZSANoBtRR7HZ6pq1M/UDUpdsJtizpiBVYX78qq2GgVr23+94Hf2SAfOirC6d3AxoNBo3Q==", "id"=>"1"}
+  [1m[35mPrototype Load (0.6ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 1
+  [1m[36mSQL (4.3ms)[0m  [1mDELETE FROM `captured_images` WHERE `captured_images`.`id` = 1[0m
+  [1m[35mSQL (2.1ms)[0m  DELETE FROM `prototypes` WHERE `prototypes`.`id` = 1
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  Rendered prototypes/destroy.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 9.4ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    1: .contents
+    2:   .success
+    3:     %h3 削除が完了しました。
+    4:       = link_to "投稿一覧へ戻る", "#", class : "btn"
+  app/views/prototypes/destroy.html.haml:4
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.8ms)
+
+
+Started DELETE "/prototypes/1" for ::1 at 2018-02-21 09:25:34 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"euueINURXZQlRxg03ZSANoBtRR7HZ6pq1M/UDUpdsJtizpiBVYX78qq2GgVr23+94Hf2SAfOirC6d3AxoNBo3Q==", "id"=>"1"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 1 LIMIT 1
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Prototype with 'id'=1):
+  app/controllers/prototypes_controller.rb:23:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (158.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:25:42 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (4.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-02-21 09:25:49 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (18.5ms)
+  Rendered shared/_header.html.haml (0.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/noimage-big-25c2ec470f6bb4ba4724d25436f786aa9d9cc3e080300063eec413fc8d8ff65e.png" for ::1 at 2018-02-21 09:25:49 +0900
+
+
+Started GET "/assets/noimage-fd3ad275fb1eeb5833d37ea27786805eb20c588c67825da9e4ad6a22d43a86fe.png" for ::1 at 2018-02-21 09:25:49 +0900
+
+
+Started POST "/prototypes" for ::1 at 2018-02-21 09:26:03 +0900
+Processing by PrototypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MucVIyTKQ/qPLUawuqRqjDFDvWNdZ4PyDpPiCnx86dAqwhOCpF7lnADcRIEM65UHUVkONZ3OoyhgK0Y2lvExlg==", "prototype"=>{"user_id"=>"1", "title"=>"aaa", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007f8e96d9a608 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180221-1021-1dljlsy.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main"}, "1"=>{"status"=>"sub"}, "2"=>{"status"=>"sub"}, "3"=>{"status"=>"sub"}}, "catch_copy"=>"aaa", "concept"=>"aaa"}, "commit"=>"PUBLISH"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO `prototypes` (`title`, `catch_copy`, `concept`, `user_id`, `created_at`, `updated_at`) VALUES ('aaa', 'aaa', 'aaa', 1, '2018-02-21 00:26:03', '2018-02-21 00:26:03')[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO `captured_images` (`content`, `status`, `prototype_id`) VALUES ('0823-t-480x640.jpg', 0, 2)
+  [1m[36m (5.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:26:03 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 2 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (3.2ms)
+  Rendered prototypes/index.html.haml within layouts/application (7.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/prototypes/2" for ::1 at 2018-02-21 09:26:07 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r6zdyw0H8JPKUnQ7Mw3lKgybkKuFZRMv8lGXDSoMeH23idtqjZNW9UWjdgqFQhqhbIEj/UXMM/Wc6TMxwIGgOw==", "id"=>"2"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 2
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `captured_images` WHERE `captured_images`.`id` = 2[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `prototypes` WHERE `prototypes`.`id` = 2
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  Rendered prototypes/destroy.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.7ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    1: .contents
+    2:   .success
+    3:     %h3 削除が完了しました。
+    4:       / = link_to "投稿一覧へ戻る", "#", class : "btn"
+  app/views/prototypes/destroy.html.haml:4
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.6ms)
+
+
+Started DELETE "/prototypes/2" for ::1 at 2018-02-21 09:26:18 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r6zdyw0H8JPKUnQ7Mw3lKgybkKuFZRMv8lGXDSoMeH23idtqjZNW9UWjdgqFQhqhbIEj/UXMM/Wc6TMxwIGgOw==", "id"=>"2"}
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 2 LIMIT 1
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Prototype with 'id'=2):
+  app/controllers/prototypes_controller.rb:23:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.7ms)
+
+
+Started DELETE "/prototypes/2" for ::1 at 2018-02-21 09:26:24 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r6zdyw0H8JPKUnQ7Mw3lKgybkKuFZRMv8lGXDSoMeH23idtqjZNW9UWjdgqFQhqhbIEj/UXMM/Wc6TMxwIGgOw==", "id"=>"2"}
+  [1m[36mPrototype Load (0.5ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Prototype with 'id'=2):
+  app/controllers/prototypes_controller.rb:23:in `destroy'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:28:25 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-02-21 09:28:29 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.2ms)
+  Rendered shared/_header.html.haml (0.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 38ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/prototypes" for ::1 at 2018-02-21 09:28:44 +0900
+Processing by PrototypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HFUcgzk2K2WpIVjWjCsI8Jx7ymPkVvIeFRsMOqYkSZoEcBoiuaKNAybQWuc6ZPd7/GF5NST/0sR7o6gGTKmR3A==", "prototype"=>{"user_id"=>"1", "title"=>"sds", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007f8e9165d778 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180221-1021-qr3uxy.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main"}, "1"=>{"status"=>"sub"}, "2"=>{"status"=>"sub"}, "3"=>{"status"=>"sub"}}, "catch_copy"=>"aaa", "concept"=>"aaaaaa"}, "commit"=>"PUBLISH"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `prototypes` (`title`, `catch_copy`, `concept`, `user_id`, `created_at`, `updated_at`) VALUES ('sds', 'aaa', 'aaaaaa', 1, '2018-02-21 00:28:44', '2018-02-21 00:28:44')
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO `captured_images` (`content`, `status`, `prototype_id`) VALUES ('0823-t-480x640.jpg', 0, 3)[0m
+  [1m[35m (4.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 55ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:28:44 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 3 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered prototypes/_prototype.html.haml (3.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (7.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/prototypes/3" for ::1 at 2018-02-21 09:28:58 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TUW4CsaPbiNOnLYiLn1QU5Tg9aYuz7J2+G0IkcE5rPtVYL6rRhvIRcFttBOYMq/Y9PpG8O5mkqyW1aytK7R0vQ==", "id"=>"3"}
+  [1m[36mPrototype Load (0.8ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `captured_images` WHERE `captured_images`.`id` = 3
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `prototypes` WHERE `prototypes`.`id` = 3[0m
+  [1m[35m (2.2ms)[0m  COMMIT
+  Rendered prototypes/destroy.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 4.2ms)
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h3 and nested within it.):
+    1: .contents
+    2:   .success
+    3:     %h3 削除が完了しました。
+    4:       / = link_to "投稿一覧へ戻る", "#", class : "btn"
+  app/views/prototypes/destroy.html.haml:4
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:29:29 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (3.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-02-21 09:29:39 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (3.7ms)
+  Rendered shared/_header.html.haml (1.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/prototypes" for ::1 at 2018-02-21 09:29:49 +0900
+Processing by PrototypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"78VQ8rxQNsMH5xIdzobWGbPZaiYmlO6XPhYRSQk0D6f34FZTPMSQpYgWECx4ySmS08PZcOY9zk1QrrV147nX4Q==", "prototype"=>{"user_id"=>"1", "title"=>"aaa", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007f8e98d6f0c8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180221-1021-165nyw4.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main"}, "1"=>{"status"=>"sub"}, "2"=>{"status"=>"sub"}, "3"=>{"status"=>"sub"}}, "catch_copy"=>"aaa", "concept"=>"aaaa"}, "commit"=>"PUBLISH"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `prototypes` (`title`, `catch_copy`, `concept`, `user_id`, `created_at`, `updated_at`) VALUES ('aaa', 'aaa', 'aaaa', 1, '2018-02-21 00:29:49', '2018-02-21 00:29:49')[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO `captured_images` (`content`, `status`, `prototype_id`) VALUES ('0823-t-480x640.jpg', 0, 4)
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:29:49 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 4 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered prototypes/_prototype.html.haml (3.7ms)
+  Rendered prototypes/index.html.haml within layouts/application (6.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/prototypes/4" for ::1 at 2018-02-21 09:29:52 +0900
+Processing by PrototypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HOjf+yOi26I1B2JOuj4To0/7pgS28pSyrNefAvoe4vgEzdlaozZ9xLr2YH8McewoL+EVUnZbtGjCbzs+EJM6vg==", "id"=>"4"}
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 4
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `captured_images` WHERE `captured_images`.`id` = 4[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `prototypes` WHERE `prototypes`.`id` = 4
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered prototypes/destroy.html.haml within layouts/application (4.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 46ms (Views: 39.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-21 09:29:59 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (2.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.6ms)
