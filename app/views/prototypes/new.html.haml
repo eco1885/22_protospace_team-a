@@ -10,11 +10,13 @@
       .row
         .col-md-12
           %h4 Main Thumbnail
-          .cover-image-upload#main_image_uploader
+          .cover-image-upload
             = f.fields_for :captured_images do |image|
               %img
               = image.file_field :content, required: true
               = image.hidden_field :status, value: "main"
+              = image_tag "", width: "100%", height: "100%", style: "display: none;", class: "preview"
+              .preview
         .col-md-12
           %h4 Sub Thumbnails
           %ul.proto-sub-list.list-group
