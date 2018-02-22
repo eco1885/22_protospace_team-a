@@ -24,12 +24,20 @@ class PrototypesController < ApplicationController
 
   def edit
     @prototype = Prototype.find(params[:id])
+    @main = @prototype.captured_images.where(status: 0)
+    @sub = @prototype.captured_images.where(status: 1)
+    # @main.captured_images.build
   end
 
   def update
-    prototype = Prototype.find(params[:id])
-      prototype.update(prototype_params)
+    @prototype = Prototype.find(params[:id])
+    if @prototype.update(prototype_params)
+    redirect_to action: 'index'
+
+    else
+      render :edit
     end
+  end
 
   private
 

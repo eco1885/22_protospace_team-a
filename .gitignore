@@ -17,6 +17,6 @@
 !/log/.keep
 !/tmp/.keep
 public/
-
+cache/
 # Ignore Byebug command history file.
 .byebug_history
