@@ -31,15 +31,15 @@ class PrototypesController < ApplicationController
 
   def edit
     @prototype = Prototype.find(params[:id])
-    @main = @prototype.captured_images.where(status: 0)
-    @sub = @prototype.captured_images.where(status: 1)
+    # @main = @prototype.captured_images.where(status: 0)
+    # @sub = @prototype.captured_images.where(status: 1)
   end
 
   def update
-    prototype = Prototype.find(params[:id])
-    prototype.update(prototype_params)
-    @prototype = prototype
-    if @prototype.update(prototype_params)
+    @prototype = Prototype.find(params[:id])
+    # @prototype.update(prototype_params)
+    # @prototype = prototype
+    if @prototype.update(update_params)
       redirect_to action: 'index'
     else
       rendr :edit
@@ -54,11 +54,23 @@ class PrototypesController < ApplicationController
 
   def prototype_params
     params.require(:prototype).permit(
+      :id,
       :title,
       :catch_copy,
       :concept,
       :user_id,
       captured_images_attributes: [:content, :status]
     )
+  end
+
+  def update_params
+    params.require(:prototype).permit(
+      :id,
+      :title,
+      :catch_copy,
+      :concept,
+      :user_id,
+      captured_images_attributes: [:content, :status, :id]
+      )
   end
 end
