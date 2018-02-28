@@ -8,14 +8,6 @@ class PrototypesController < ApplicationController
   def new
     @prototype = Prototype.new
     @prototype.captured_images.build
-    if @prototype.save
-      respond_to do |format|
-        format.html { redirect_to :root }
-        format.json { render json: @prototype }
-      end
-    else
-      render :new
-    end
   end
 
   def create

@@ -18,3 +18,19 @@
 
 # CarrierWave
 /public/uploads
+
+tmp/pids/server.pid
+
+log/development.log
+
+*.pid
+
+*.pid
+
+tmp/pids/server.pid
+
+*.pid
+
+log/development.log
+
+tmp/pids/server.pid

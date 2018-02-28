@@ -15,8 +15,7 @@
               %img
               = image.file_field :content, required: true
               = image.hidden_field :status, value: "main"
-              = image_tag "", width: "100%", height: "100%", style: "display: none;", class: "preview"
-              .preview
+              = image_tag "", width: "100%", height: "100%", style: "display: none;", class: "mainpreview"
         .col-md-12
           %h4 Sub Thumbnails
           %ul.proto-sub-list.list-group
@@ -27,6 +26,8 @@
                     %img
                     = image.file_field :content
                     = image.hidden_field :status, value: "sub"
+                    = image_tag "", width: "100%", height: "100%", style: "display: none;", class: "subpreview"
+                    .sub_preview
       .row.proto-description
         .col-md-12
           %h4 Catch Copy
