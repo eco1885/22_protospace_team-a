@@ -18,10 +18,10 @@
         .col-md-12
           %h4 Sub Thumbnails
           %ul.proto-sub-list.list-group
-            - 3.times do |i|
+            - @prototype.captured_images.sub.each.with_index(1) do |sub, num|
               %li.list-group-item.col-md-4
                 .image-upload
-                  = f.fields_for :captured_images,@prototype.captured_images.sub.each do |image|
+                  = f.fields_for :captured_images,sub do |image|
                     %img
                     = image.file_field :content
                     = image.hidden_field :status, value: "sub"
