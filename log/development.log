@@ -7721,3 +7721,1982 @@ ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/t
   Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:06:56 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (3.4ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.6ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (1.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.6ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (17.2ms)
+  Rendered prototypes/index.html.haml within layouts/application (25.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 99ms (Views: 89.4ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:06:56 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:06:57 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (9.9ms)
+  Rendered prototypes/index.html.haml within layouts/application (14.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:07:00 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"bMYZm/t3e3Cz2LpaWUSGUhN9nH252we6wsI/+5VA2X904x86e+PdFjwpuGvvC3nZc2cvK3lyJ2CsepvHf80BOQ==", "id"=>"7"}
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  Rendered prototypes/edit.html.haml within layouts/application (20.1ms)
+  Rendered shared/_header.html.haml (1.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.3ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 10:07:30 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fV3jQXkJ78jAr/k23oEnZljkNX6PXh4tfr2UI1dy8ZFleOXg+Z1Jrk9e+wdoztjtOP6GKE/3PvcQBTAfvf8p1w==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd312da898 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-79bphu.jpg>, @original_filename="GAK86_hutounokuroneko_TP_V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"GAK86_hutounokuroneko_TP_V.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd312da320 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-cyuqgf.jpg>, @original_filename="GAK86_hutounokuroneko_TP_V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"GAK86_hutounokuroneko_TP_V.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd312d9da8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1ndv8jq.jpg>, @original_filename="GAK86_hutounokuroneko_TP_V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"GAK86_hutounokuroneko_TP_V.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd312d9830 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1r7ctvb.jpg>, @original_filename="GAK86_hutounokuroneko_TP_V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"GAK86_hutounokuroneko_TP_V.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.5ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `captured_images` SET `content` = 'GAK86_hutounokuroneko_TP_V.jpg' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = 'GAK86_hutounokuroneko_TP_V.jpg' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 391ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:07:30 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (6.7ms)
+  Rendered prototypes/index.html.haml within layouts/application (9.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:07:33 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.4ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (6.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:07:33 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:07:43 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.6ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (16.8ms)
+  Rendered prototypes/index.html.haml within layouts/application (23.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:07:43 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.9ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:07:45 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"+eRI997SiBpOxXYBOnKK0CKrrgNOOsukLV7wPqBUo0jhwU5WXkYufME0dDCMPXVbQrEdVY6T635D5lQCStl7Dg==", "id"=>"7"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.6ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7[0m
+  Rendered prototypes/edit.html.haml within layouts/application (17.2ms)
+  Rendered shared/_header.html.haml (0.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 10:08:10 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sZPDNKx9TZdTGrxW8OAYg031IsnNTE8i7VqIqhFD44CptsWVLOnr8dzrvmdGr+cILe+Rnw3lb/iD4iyW+847xg==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2760b2b0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-oc0eqh.jpg>, @original_filename="GAK86_hutounokuroneko_TP_V.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"GAK86_hutounokuroneko_TP_V.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd27608420 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-tzbszw.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd269b5470 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-15ynp3t.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd269bf2e0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1fr0aiz.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = 'GAK86_hutounokuroneko_TP_V.jpg' WHERE `captured_images`.`id` = 8[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `captured_images` SET `content` = 'IMG_0341.JPG' WHERE `captured_images`.`id` = 11
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1791ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:08:11 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (8.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (10.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:08:13 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPrototype Load (1.4ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  Rendered prototypes/show.html.haml within layouts/application (6.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:08:13 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (180.2ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:19:11 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (5.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:19:11 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (167.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:19:13 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.5ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (7.3ms)
+  Rendered prototypes/index.html.haml within layouts/application (12.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.4ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:19:13 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.8ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:19:16 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPrototype Load (0.4ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  Rendered prototypes/show.html.haml within layouts/application (7.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 53ms (Views: 48.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:19:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:19:21 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.4ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (11.8ms)
+  Rendered prototypes/index.html.haml within layouts/application (17.5ms)
+  [1m[35mUser Load (3.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (6.8ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 66ms (Views: 59.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:19:21 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.5ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:19:24 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"MfxQaC4rHu8VoofF5gxlcm0QfKKvchmdpzSHrx/Y108p2VbJrr+4iZpThfRQQ5r5DQrP9G/bOUfJjCOT9VUPCQ==", "id"=>"7"}
+  [1m[36mPrototype Load (1.0ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  Rendered prototypes/edit.html.haml within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    21:             - 3.times do |i|
+    22:               %li.list-group-item.col-md-4
+    23:                 .image-upload
+    24:                   = f.fields_for :captured_images, @prototype.captured_images[:id] do |image|
+    25:                     %img
+    26:                     = image.file_field :content
+    27:                     = image.hidden_field :status, value: "sub"
+  app/views/prototypes/edit.html.haml:24:in `block (2 levels) in _app_views_prototypes_edit_html_haml__4046087225634047236_70225254447460'
+  app/views/prototypes/edit.html.haml:21:in `times'
+  app/views/prototypes/edit.html.haml:21:in `block in _app_views_prototypes_edit_html_haml__4046087225634047236_70225254447460'
+  app/views/prototypes/edit.html.haml:2:in `_app_views_prototypes_edit_html_haml__4046087225634047236_70225254447460'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.0ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:24:19 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"MfxQaC4rHu8VoofF5gxlcm0QfKKvchmdpzSHrx/Y108p2VbJrr+4iZpThfRQQ5r5DQrP9G/bOUfJjCOT9VUPCQ==", "id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  Rendered prototypes/edit.html.haml within layouts/application (14.8ms)
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:24:21 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (9.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (13.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:40:09 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (28.4ms)
+  Rendered prototypes/index.html.haml within layouts/application (39.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 123ms (Views: 103.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:40:13 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"GWS1UhUl3zp/b4qS5J4JyYVKECEBIaH4YMffQ2byjUcBQbPzlbF5XPCeiKNS0fZC5VCjd8GIgSIOf3t/jH9VAQ==", "id"=>"7"}
+  [1m[36mPrototype Load (0.8ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `captured_images' for #<CapturedImage::ActiveRecord_AssociationRelation:0x007fbd2871cf68>):
+  app/controllers/prototypes_controller.rb:36:in `edit'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (180.9ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:41:02 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"GWS1UhUl3zp/b4qS5J4JyYVKECEBIaH4YMffQ2byjUcBQbPzlbF5XPCeiKNS0fZC5VCjd8GIgSIOf3t/jH9VAQ==", "id"=>"7"}
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/edit.html.haml within layouts/application (27.3ms)
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 86ms (Views: 62.1ms | ActiveRecord: 7.2ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 10:41:21 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u2Ktoco8xxNNwnGgN1NBeDl0PxMpkt3EkF1nFLXlRx2jR6sASqhhdcIzc5GBHL7zWW6MRek7/R7+5cMoX2ifWw==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2bf74cf8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-zt00uz.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"9"}, "2"=>{"status"=>"sub", "id"=>"10"}, "3"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2bf748c0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-nuuo8c.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][3][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "4"=>{"status"=>"sub", "id"=>"9"}, "5"=>{"status"=>"sub", "id"=>"10"}, "6"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2bf74488 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1njp04d.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][6][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "7"=>{"status"=>"sub", "id"=>"9"}, "8"=>{"status"=>"sub", "id"=>"10"}, "9"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2bf74028 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-8idtw8.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][9][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 9, 10, 11, 9, 10, 11, 9, 10, 11)[0m
+  [1m[35mSQL (9.2ms)[0m  UPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (12.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms (ActiveRecord: 22.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:41:21 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (8.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (12.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:41:25 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.6ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:41:25 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.7ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:42:17 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  Rendered prototypes/show.html.haml within layouts/application (4.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:42:17 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:42:20 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (7.8ms)
+  Rendered prototypes/index.html.haml within layouts/application (11.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:42:20 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.2ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:42:22 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"7f7NQrxVzui+U+5kz7XS1FJiCmA/KUMAqFGr2oMALoT128vjPMFojjGi7FV5+i1fMni5Nv+AY9rG6Q/maY32wg==", "id"=>"7"}
+  [1m[36mPrototype Load (0.5ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  Rendered prototypes/edit.html.haml within layouts/application (15.0ms)
+  Rendered shared/_header.html.haml (1.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 10:42:47 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X+vUV6IeprVeKNwiwVMKlCQc09G6OZEjOBnQBiVpuzxHztL2IooA09HZ3hN3HPUfRAZgh3qQsflWoXQ6z+Rjeg==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2f5437d0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1sn1078.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2f5430f0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-13kyxop.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2f542a60 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1obq1rr.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2f542420 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-7rmtzs.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `captured_images` SET `content` = 'IMG_0341.JPG' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `captured_images` SET `content` = 'IMG_0341.JPG' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (5.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 2345ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:42:50 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (7.3ms)
+  Rendered prototypes/index.html.haml within layouts/application (10.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:42:53 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.4ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (6.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:42:53 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:44:27 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.8ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (11.2ms)
+  Rendered prototypes/index.html.haml within layouts/application (18.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:44:27 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:44:29 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.4ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (7.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (13.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 10:44:31 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"p0iIKUEWPJ/bjQvZpwQkTx7Py5pzjbpbqsq8B9qk5dW/bY6IwYKa+VR8CegRS9vEftV4zLMkmoHEchg7MCk9kw==", "id"=>"7"}
+  [1m[35mPrototype Load (0.8ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m  [["prototype_id", 7], ["status", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1  [["prototype_id", 7], ["status", 1]]
+  Rendered prototypes/edit.html.haml within layouts/application (19.5ms)
+  Rendered shared/_header.html.haml (1.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 63ms (Views: 57.1ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 10:44:48 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WiI79ghroB2iXLPwUj/mjrlJH+eUcmsrJ50uEEY0F0RCBz1XiP8Gey2tscHkcBkF2VOssVTbS/FJJYosrLnPAg==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28a13528 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-qtt82v.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28a127b8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-lldexa.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28a119d0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-165zmld.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28a10c60 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1mdcvrz.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (5.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 157ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 10:44:49 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (7.8ms)
+  Rendered prototypes/index.html.haml within layouts/application (10.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 10:44:51 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (5.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 10:44:51 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (167.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:36:08 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (11.1ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (3.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (15.6ms)
+  Rendered prototypes/index.html.haml within layouts/application (35.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (3.7ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 111ms (Views: 94.2ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:36:08 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (188.1ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 11:36:13 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPrototype Load (2.3ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.8ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  Rendered prototypes/show.html.haml within layouts/application (9.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 60ms (Views: 52.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:36:13 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:36:15 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.7ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (9.4ms)
+  Rendered prototypes/index.html.haml within layouts/application (15.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 57ms (Views: 52.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:36:15 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (80.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (192.1ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 11:36:16 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.4ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (8.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (3.1ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:36:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:36:22 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (2.5ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (2.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (1.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (15.4ms)
+  Rendered prototypes/index.html.haml within layouts/application (23.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.9ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 66ms (Views: 57.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:36:22 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (137.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (178.4ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 11:36:24 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"Yjp0B4m6++8JhfKdO/KpiFYfuykjPtHcBGV629T8MRl6H3KmCS5diYZ08KyNvVYDNgUIf+OX8QZq3d7nPnHpXw==", "id"=>"7"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.2ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.7ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m  [["prototype_id", 7], ["status", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1  [["prototype_id", 7], ["status", 1]]
+  Rendered prototypes/edit.html.haml within layouts/application (16.5ms)
+  Rendered shared/_header.html.haml (1.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 11:36:54 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YOtnqlIuFBeLUUzBkHdQ2I3pzshD5dDkIyr48UVRNWp4zmEL0rqycQSgTvAmOK9T7fN9noNM8D5NklzNr9ztLA==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28f4dea8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-oikkhb.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28f4d930 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1vy1ho8.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28f4d3b8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-s7rs2j.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd28f4ce40 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-tezn0m.JPG>, @original_filename="IMG_0341.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"IMG_0341.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `captured_images` SET `content` = 'IMG_0341.JPG' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = 'IMG_0341.JPG' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (5.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 2299ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:36:56 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.2ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (8.5ms)
+  Rendered prototypes/index.html.haml within layouts/application (12.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 11:37:00 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1
+  Rendered prototypes/show.html.haml within layouts/application (7.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (3.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:37:00 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:37:30 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.5ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (15.2ms)
+  Rendered prototypes/index.html.haml within layouts/application (20.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:37:30 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.8ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 11:39:34 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"lt6PUG1YTYE1STEL6aAJ5yIuu/MjIFczlHX5av1UJSqO+4nx7czr57q4Mzpf7/ZsQjQIpeOJd+n6zV1WF9n9bA==", "id"=>"7"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.8ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m  [["prototype_id", 7], ["status", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1  [["prototype_id", 7], ["status", 1]]
+  Rendered prototypes/edit.html.haml within layouts/application (19.6ms)
+  Rendered shared/_header.html.haml (1.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 11:39:41 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YykF4W7Y1OdGYKtCrVjUdwJEV0y9Fk9o0Pe/Jbz35pp7DANA7kxygcmRqXMbFyv8Yl7kGn2/b7K+TxsZVno+3A==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fbd2f50a0e8 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-1418-1jhzc4z.JPG>, @original_filename="IMG_0515.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"IMG_0515.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `captured_images` SET `content` = 'IMG_0515.JPG' WHERE `captured_images`.`id` = 8
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 366ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 11:39:42 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.4ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (9.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (13.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/prototypes/7" for ::1 at 2018-02-26 11:39:52 +0900
+Processing by PrototypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPrototype Load (0.4ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.4ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  Rendered prototypes/show.html.haml within layouts/application (6.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 11:39:52 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.5ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-26 12:00:56 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.3ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (0.2ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (90.7ms)
+  Rendered prototypes/index.html.haml within layouts/application (366.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (12.1ms)
+  Rendered shared/_messages.html.haml (2.1ms)
+  Rendered shared/_footer.html.haml (2.8ms)
+Completed 200 OK in 483ms (Views: 414.6ms | ActiveRecord: 47.6ms)
+
+
+Started GET "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg" for ::1 at 2018-02-26 12:00:57 +0900
+
+ActionController::RoutingError (No route matches [GET] "/uploads/user/avatar/1/thumb_GAK86_hutounokuroneko_TP_V.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (133.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.7ms)
+
+
+Started GET "/prototypes/7/edit" for ::1 at 2018-02-26 12:01:29 +0900
+Processing by PrototypesController#edit as HTML
+  Parameters: {"authenticity_token"=>"X8CWUHvYAmFa6XCFpQue3Xda7vq6MUD43kgJVaGK1zlH5ZDx+0ykB9UYcrQTRGFWF0BdrHqYYCKw8K1pSwcPfw==", "id"=>"7"}
+  [1m[35mPrototype Load (0.2ms)[0m  SELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m
+  [1m[35mCapturedImage Load (0.3ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1[0m  [["prototype_id", 7], ["status", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 1  [["prototype_id", 7], ["status", 1]]
+  Rendered prototypes/edit.html.haml within layouts/application (32.4ms)
+  Rendered shared/_header.html.haml (1.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/prototypes/7" for ::1 at 2018-02-26 12:01:47 +0900
+Processing by PrototypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TclanVPeBN1wn5y8oGYK2g+0i72jeLhlaEP2YMln5a9V7Fw800qiu/9uno0WKfVRb64462PRmL8G+1JcI+o96Q==", "prototype"=>{"user_id"=>"1", "title"=>"cccc", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007ffb19129988 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-2329-14kbfct.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main", "id"=>"8"}, "1"=>{"status"=>"sub", "id"=>"8"}, "2"=>{"status"=>"sub", "id"=>"9"}, "3"=>{"status"=>"sub", "id"=>"10"}, "4"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007ffb19128b50 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-2329-w8biuh.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][4][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "5"=>{"status"=>"sub", "id"=>"8"}, "6"=>{"status"=>"sub", "id"=>"9"}, "7"=>{"status"=>"sub", "id"=>"10"}, "8"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007ffb16922e80 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-2329-1qasz2z.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][8][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}, "9"=>{"status"=>"sub", "id"=>"8"}, "10"=>{"status"=>"sub", "id"=>"9"}, "11"=>{"status"=>"sub", "id"=>"10"}, "12"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007ffb16920ea0 @tempfile=#<Tempfile:/var/folders/vm/rg7h8ms54_q3s7hr5htmqbpw0000gn/T/RackMultipart20180226-2329-udjgd7.jpg>, @original_filename="0823-t-480x640.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][12][content]\"; filename=\"0823-t-480x640.jpg\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"sub", "id"=>"11"}}, "catch_copy"=>"kkkkkk", "concept"=>"oooooooo"}, "commit"=>"PUBLISH", "id"=>"7"}
+  [1m[36mPrototype Load (0.3ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes` WHERE `prototypes`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`id` IN (8, 8, 9, 10, 11, 8, 9, 10, 11, 8, 9, 10, 11)[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 8
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `captured_images` SET `content` = '0823-t-480x640.jpg' WHERE `captured_images`.`id` = 11[0m
+  [1m[35m (6.4ms)[0m  COMMIT
+Completed 401 Unauthorized in 219742ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-28 09:22:54 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (5.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+SyntaxError (/Users/yokomizoyuuki/project/22_protospace_team-a/app/controllers/prototypes_controller.rb:1: syntax error, unexpected keyword_class, expecting end-of-input
+2class PrototypesController < ApplicationController
+      ^):
+  app/controllers/prototypes_controller.rb:1: syntax error, unexpected keyword_class, expecting end-of-input
+
+
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (106.1ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/yokomizoyuuki/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (246.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-28 09:23:05 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (1.6ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  [1m[36mCapturedImage Load (25.0ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 5 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 6 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCapturedImage Load (0.3ms)[0m  [1mSELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 7 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (93.1ms)
+  Rendered prototypes/index.html.haml within layouts/application (324.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (12.3ms)
+  Rendered shared/_messages.html.haml (1.5ms)
+  Rendered shared/_footer.html.haml (1.5ms)
+Completed 200 OK in 429ms (Views: 367.9ms | ActiveRecord: 41.0ms)

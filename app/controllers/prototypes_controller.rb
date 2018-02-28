@@ -33,6 +33,7 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
     # @main = @prototype.captured_images.where(status: 0)
     # @sub = @prototype.captured_images.where(status: 1)
+    # @sub.captured_images.build
   end
 
   def update
